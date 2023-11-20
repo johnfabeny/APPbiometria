@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agrotóxicos - Registro de Empresas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p, ul, form {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="file"] {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>Agrotóxicos e Afins - Registro de Empresas Fabricantes, Formuladoras, Manipuladoras, Importadoras, Exportadoras</h1>
+            
+            <h2>Requerimento para Cadastro do Produto:</h2>
+            
+            <form action="submit-form.php" method="post">
+                <label for="empresa">Empresa Titular do Registro:</label>
+                <input type="text" id="empresa" name="empresa">
+                
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj">
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+                
+                <label for="produto">Produto (Marca Comercial):</label>
+                <input type="text" id="produto" name="produto">
+                
+                <h2>Anexe os seguintes documentos:</h2>
+                
+                <label for="publicacao">Cópia da publicação do registro no Diário Oficial da União:</label>
+                <input type="file" id="publicacao" name="publicacao">
+                
+                <label for="certificado">Cópia do certificado de registro no órgão federal competente:</label>
+                <input type="file" id="certificado" name="certificado">
+                
+                <label for="rotulo">Cópia de rótulo e bula contendo as informações exigidas pelos órgãos registrantes federais competentes:</label>
+                <input type="file" id="rotulo" name="rotulo">
+                
+                <label for="residuos">Relatório de estudos de resíduos e intervalo de segurança:</label>
+                <input type="file" id="residuos" name="residuos">
+                
+                <label for="ambientais">Relatório de dados ambientais contendo dados e resumo dos estudos de toxicidade para organismos não alvos, como abelhas, peixes e aves, quando for o caso:</label>
+                <input type="file" id="ambientais" name="ambientais">
+                
+                <label for="requerimento">Modelo de requerimento para cadastro do produto datado e assinado:</label>
+                <input type="file" id="requerimento" name="requerimento">
+                
+                <input type="submit" value="Enviar">
+           </form>
+            </div>
+            <div class="sidebar">
+                <h3>Publicidade</h3>
+                <img src="publicidade1.jpg" alt="Publicidade 1">
+                <img src="publicidade2.jpg" alt="Publicidade 2">
+            </div>
+        </div>
+    </body>
+    </html>
